@@ -1,43 +1,66 @@
-# Security Policy
+# Security Policy — Armpix Security Suite
 
 ## Reporting a Vulnerability
 
-We take security seriously. If you discover a vulnerability in Armpix Security Suite, please report it responsibly.
+We take security vulnerabilities seriously. If you discover a security issue in Armpix, please report it responsibly.
 
-**Contact:** vt100@charm.sh
+## How to Report
 
-**DO NOT** open a public GitHub issue for security vulnerabilities.
+1. **Email:** arturo@iartlabs.com
+2. **PGP Key:** Not yet published. Contact via email first.
+3. **GitHub:** Open a private security advisory at https://github.com/ART449/Armpix-segurity-suite/security/advisories/new
 
-### Reporting Process
+**Do NOT** open a public issue for security vulnerabilities.
 
-1. Email the maintainers at the contact above
-2. Include a detailed description of the vulnerability
-3. Provide steps to reproduce
-4. Include potential impact assessment
-5. Allow up to 72 hours for initial response
+## What to Include
 
-### Supported Versions
+- Type of vulnerability (XSS, CSRF, injection, auth bypass, etc.)
+- Affected component/endpoint
+- Steps to reproduce
+- Potential impact
+- Suggested fix (if any)
 
-| Version | Supported          |
-| ------- | ------------------ |
-| latest  | :white_check_mark: |
-| < 1.0   | :x:                |
+## Response Timeline
 
-### Scope
+- **Acknowledgment:** Within 48 hours
+- **Initial Assessment:** Within 5 business days
+- **Fix Released:** As soon as possible, depending on severity
 
-- URL protection and analysis vulnerabilities
-- Authentication bypass
-- Data exposure
-- Injection vulnerabilities
-- API security issues
+## Scope
 
-### Out of Scope
+This policy covers:
+- Armpix REST API (FastAPI backend)
+- Armpix Web Dashboard
+- Armpix CLI tool
+- Armpix Mobile (PWA + React Native)
+- Docker deployment configuration
+- URL scanning and threat detection engine
 
-- Social engineering
-- Denial of Service (DoS)
-- Third-party service vulnerabilities
+## Out of Scope
 
-## Disclosure Policy
+- Vulnerabilities in third-party dependencies (report to upstream)
+- Social engineering or phishing attacks
+- DoS/DDoS attacks
+- Physical security issues
 
-- Coordinated disclosure after fix is released
-- Credit given to reporters (unless anonymous request)
+## Recognition
+
+We maintain a hall of fame for responsible disclosures. Researchers who report valid vulnerabilities will be acknowledged (with permission) in the project's security advisory page.
+
+## Compliance
+
+Armpix follows:
+- OWASP Top 10 mitigation guidelines
+- CWE/SANS Top 25 Most Dangerous Software Errors
+- GDPR-compliant data handling (no user data logged without consent)
+
+## Supported Versions
+
+| Version | Supported |
+|---------|-----------|
+| Latest (main) | Yes |
+| < 1.0.0 | No |
+
+---
+
+Secured by Colmena — CETACEA Audit Approved
