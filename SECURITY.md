@@ -1,66 +1,52 @@
 # Security Policy — Armpix Security Suite
 
-## Reporting a Vulnerability
+We appreciate responsible security research and will work with reporters to investigate and address valid vulnerabilities.
 
-We take security vulnerabilities seriously. If you discover a security issue in Armpix, please report it responsibly.
+## Report a Vulnerability
 
-## How to Report
+Please use one of these private channels:
 
-1. **Email:** arturo@iartlabs.com
-2. **PGP Key:** Not yet published. Contact via email first.
-3. **GitHub:** Open a private security advisory at https://github.com/ART449/Armpix-segurity-suite/security/advisories/new
+- **GitHub:** [Create a private security advisory](https://github.com/ART449/Armpix-segurity-suite/security/advisories/new).
+- **Email:** [arturo@iartlabs.com](mailto:arturo@iartlabs.com).
 
-**Do NOT** open a public issue for security vulnerabilities.
+Do not report security vulnerabilities in public issues, discussions, or pull requests. There is no published PGP key; please use the private advisory channel if you need encrypted communication.
 
-## What to Include
+## Include in Your Report
 
-- Type of vulnerability (XSS, CSRF, injection, auth bypass, etc.)
-- Affected component/endpoint
-- Steps to reproduce
-- Potential impact
-- Suggested fix (if any)
+If available, include:
 
-## Response Timeline
+- The affected component and version or commit.
+- A concise description of the vulnerability and its potential impact.
+- Reproduction steps or a minimal proof of concept.
+- Any relevant configuration or logs, with secrets and personal data removed.
 
-- **Acknowledgment:** Within 48 hours
-- **Initial Assessment:** Within 5 business days
-- **Fix Released:** As soon as possible, depending on severity
+Please do not include passwords, tokens, or real users' personal data in a report.
+
+## Researcher Guidelines
+
+- Test only systems you own or are explicitly authorized to assess, preferably in a local or controlled environment.
+- Do not access, modify, or disclose other people's data; do not disrupt services or conduct denial-of-service testing.
+- Stop testing and report the issue promptly if you encounter sensitive data or unexpected access.
+- Give us a reasonable opportunity to investigate and address the issue before public disclosure. We will coordinate disclosure timing with you.
 
 ## Scope
 
-This policy covers:
-- Armpix REST API (FastAPI backend)
-- Armpix Web Dashboard
-- Armpix CLI tool
-- Armpix Mobile (PWA + React Native)
-- Docker deployment configuration
-- URL scanning and threat detection engine
+This policy covers Armpix components maintained and distributed by this project, including the REST API, web dashboard, CLI, mobile/PWA clients, Docker deployment configuration, and URL scanning and threat-detection engine, where present.
 
-## Out of Scope
+A third-party dependency is in scope when its vulnerability makes a supported Armpix version vulnerable. Issues confined to a third-party service or product not operated or maintained by this project should be reported to its provider.
 
-- Vulnerabilities in third-party dependencies (report to upstream)
-- Social engineering or phishing attacks
-- DoS/DDoS attacks
-- Physical security issues
+Social engineering, physical security, and denial-of-service findings are out of scope. Do not test third-party systems without their authorization.
 
-## Recognition
+## Response
 
-We maintain a hall of fame for responsible disclosures. Researchers who report valid vulnerabilities will be acknowledged (with permission) in the project's security advisory page.
+We aim to:
 
-## Compliance
+- Acknowledge a report within **2 business days**.
+- Provide an initial assessment within **5 business days**.
+- Keep the reporter informed if investigation or remediation takes longer.
 
-Armpix follows:
-- OWASP Top 10 mitigation guidelines
-- CWE/SANS Top 25 Most Dangerous Software Errors
-- GDPR-compliant data handling (no user data logged without consent)
+Remediation timing depends on the issue's severity and complexity. Valid reports may be acknowledged in a security advisory or other project materials only with the reporter's permission.
 
 ## Supported Versions
 
-| Version | Supported |
-|---------|-----------|
-| Latest (main) | Yes |
-| < 1.0.0 | No |
-
----
-
-Secured by Colmena — CETACEA Audit Approved
+No versioned releases or tags are currently published. Until releases are published, the latest code on the `main` branch is the only supported version. This section will be updated as supported releases are established.
